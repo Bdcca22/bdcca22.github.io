@@ -1,0 +1,124 @@
+/* Cargo la Tipografía*/
+ /* ---------- NOMBRE ----------------*/ 
+@font-face {
+    font-family: "Allura-Regular";
+    src: url('../fuentes/Allura-Regular.ttf');
+}
+#div_general{
+    display:flex;
+    justify-content: space-between;
+}
+
+#div_izquierda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#div_derecha{
+    margin-top: 5vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+body {
+    background-image: url('../img/fondo_VG_transparencia.jpg');
+    background-size: cover; /* Ajusta la imagen para que cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    background-blend-mode:color-burn;
+    }
+
+#nombre{
+    margin-top: 5vw;
+    margin-bottom: 3vh;
+    color: #ffffff;
+    font-size: 6vw;
+    font-family: "Allura-Regular";
+}
+
+#cuadrado_nombre{
+    width: 90%;
+    margin-left: 10vw;
+    margin-bottom: 2vh;
+    border-radius: 12px;
+    text-align: left;
+  }
+
+ /* ---------- BOTONES ----------------*/ 
+
+#botones_principales {
+    display: flex;
+    flex-direction: column; /* Para que los botones estén en columna */
+    align-items: left; /* Centra los botones horizontalmente */
+    text-align: center;
+    width: 50%;
+
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 10vh;
+
+    border-radius: 12px;
+
+    
+}
+
+ /* Botones principales */ 
+.boton_link{
+    text-decoration: none;
+    color:#ffffff;
+
+    font-size: 3vw;
+    font-family:'Cambria'; /*, 'Cochin', 'Georgia', 'Times', 'Times New Roman', 'serif';*/
+
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    margin-bottom: 4vh;
+
+    transition-duration: .4s;
+  }
+
+/* Cuando pasa por encima el ratón a los botones*/
+.boton_link:hover{
+    background-color: #363636a1;
+    border-radius: 24px;
+    color: #ffffff;
+  }
+
+ /* ---------- FOTO ----------------*/ 
+
+#foto{
+    width: 30vw;
+    height: 30vw; /* Establece la altura para que sea igual al ancho */
+    border-radius: 50%; /* Esto recorta la imagen en un círculo */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el círculo */
+    
+}
+
+#cv-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#icon-cv {
+    width: 5vw;
+    height: auto;
+}
+
+#descargar_curriculum{
+    text-decoration: none;
+    color: #000000;
+    font-family:'Cambria';
+}
+
