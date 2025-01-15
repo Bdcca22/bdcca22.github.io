@@ -97,8 +97,7 @@ body {
     width: 30vw;
     height: 30vw; /* Establece la altura para que sea igual al ancho */
     border-radius: 50%; /* Esto recorta la imagen en un círculo */
-    object-fit: cover; /* Asegura que la imagen cubra completamente el círculo */
-    
+    object-fit: cover; /* Asegura que la imagen cubra completamente el círculo */ 
 }
 
 #cv-container {

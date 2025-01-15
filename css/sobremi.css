@@ -1,7 +1,9 @@
+
+/* --------------CABECERA------------------*/
 #cabecera{
     background: url('../img/cabecera.jpg') no-repeat top center;
     background-size: cover;
-    height: 100px;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,10 +22,11 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 100%;
     
     margin: 0;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 #menu li {
@@ -33,19 +36,112 @@ nav {
 #menu a {
     text-decoration: none;
     color: black;
-    font-size: 1em;
     
 }
 
 #estamosaqui{
     text-decoration: none;
     color: black;
-    font-size: 1em;
     font-weight: bold;
 
 }
 
 #logo {
-    width: 60px;
+    width: 5vw;
     height: auto;
+}
+
+/* ------------- SOBRE MI -------------------*/
+h1{
+    text-align: center;
+    margin-top: 12rem; /* Espaciado constante */
+    font-size: 4vw;
+    font-family:'Georgia'; /*'Times New Roman', Times, serif*/
+}
+
+/* ---------------DIVISIONES -----------------*/
+#div_general{
+    display:flex;
+    justify-content: space-between;
+}
+
+#div_izquierda{
+    margin-right: 5vw;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+#div_izquierda_foto{
+    display: none;
+}
+
+/* CUANDO LA PANATALLA SEA PEQUEÑA ... */
+@media screen and (max-width: 767px) {
+    #div_izquierda{
+        display:none;
+    }
+    #div_izquierda_foto {
+        width: 80%;
+        display: block;
+        text-align: center;
+    }
+}
+/*  ... */
+
+#div_derecha{
+    margin-right: 5vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#foto{
+    width: 25vw;
+    object-fit: cover; /* Asegura que la imagen cubra completamente el círculo */ 
+}
+
+p{
+    text-align: left;
+    font-size: 90%;
+    font-family:'Courier New'; /*, Courier, monospace;*/
+    text-align: justify;
+}
+
+li{
+    text-align: left;
+    font-size: 90%;
+    font-family:'Courier New'; /*, Courier, monospace;*/
+    text-align: justify;
+
+}
+
+/* --------------- PIE -----------------*/
+#pie{
+    background: url('../img/cabecera.jpg') no-repeat bottom center;
+    background-size: cover;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+   
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+#pie p{
+    margin-left: 5vw;
+}
+
+#pie_linkdin{
+    width: 5vw;
+    margin-right: 5vw;
 }
