@@ -5,6 +5,7 @@
     src: url('../fuentes/Allura-Regular.ttf');
 }
 #div_general{
+    
     display:flex;
     justify-content: space-between;
 }
@@ -92,6 +93,26 @@ body {
   }
 
  /* ---------- FOTO ----------------*/ 
+ /* CUANDO LA PANATALLA SEA PEQUEÑA ... */
+ #div_derecha_pequeño {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    #div_derecha{
+        display:none;
+    }
+    #div_derecha_pequeño {
+        
+        display: block;
+        text-align: center;
+        border-radius: 15%;
+    }
+    #div_general{
+        display:flex;
+        justify-content: center;
+    }
+}
 
 #foto{
     width: 30vw;
@@ -104,6 +125,7 @@ body {
     margin-top: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 2vw;
     gap: 10px;
     padding: 10px 20px;
