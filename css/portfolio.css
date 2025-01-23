@@ -67,18 +67,63 @@ h1{
 
 h2{
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: 'Arial' ; /*, Helvetica, sans-serif;*/
     color: aliceblue;
     background-color: #5071a2;
 }
 
-#img_cortometrajes {
-    height: 15vh;
-    border-radius: 0em;
+h3{
+    text-align: center;
+    font-size: 1.3vw;
+    font-family: 'Arial' ; /*, Helvetica, sans-serif;*/
+}
+
+#div_cortometraje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 8vw;
+}
+
+#img_cortometraje {
+    height: 13vw;
+    border-radius: 1em;
     transition-duration: .2s;
     
 }
+
+#div_blender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 8vw;
+}
+
+.blender {
+    height: 20vw;
+    border-radius: 1em;
+    margin-right: 2vw;
+}
+
+#div_dibujo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    margin-bottom: 8vw;
+}
+
+.dibujo {
+    height: 20vw;
+    border-radius: 1em;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+}
+
 
 
 /* --------------- PIE -----------------*/

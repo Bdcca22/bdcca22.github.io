@@ -69,6 +69,7 @@ body {
 
  /* Botones principales */ 
 .boton_link{
+    display: flex;
     text-decoration: none;
     color:#ffffff;
 
@@ -83,6 +84,9 @@ body {
     margin-bottom: 4vh;
 
     transition-duration: .4s;
+
+    justify-content: center;
+    align-items: center;
   }
 
 /* Cuando pasa por encima el ratón a los botones*/
@@ -91,6 +95,10 @@ body {
     border-radius: 24px;
     color: #ffffff;
   }
+
+.logo{
+    margin-right: 1vw;
+}
 
  /* ---------- FOTO ----------------*/ 
  /* CUANDO LA PANATALLA SEA PEQUEÑA ... */
@@ -143,3 +151,7 @@ body {
     font-family:'Cambria';
 }
 
+.logo{
+    width: 5vw;
+    height: auto;
+}
