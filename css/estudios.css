@@ -2,7 +2,7 @@
 #cabecera{
     background: url('../img/cabecera.jpg') no-repeat top center;
     background-size: cover;
-    height: 15%;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,12 +42,10 @@ nav {
     text-decoration: none;
     color: black;
     font-weight: bold;
-
 }
 
 #logo {
-    width: 5vw;
-    height: auto;
+    height: 8vh;
 }
 
 li{
@@ -60,8 +58,8 @@ li{
 /* ------------- ESTUDIO -------------------*/
 h1{
     text-align: center;
-    margin-top: 12rem; /* Espaciado constante */
-    font-size: 4vw;
+    margin-top: 16vh;  
+    font-size: 5vh;
     font-family:'Georgia'; /*'Times New Roman', Times, serif*/
 }
 
@@ -139,11 +137,15 @@ p{
 #pie{
     background: url('../img/cabecera.jpg') no-repeat bottom center;
     background-size: cover;
+    height: 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position:relative;
    
+    bottom:0;
+    left:0;
+    right:0;
 }
 
 #pie p{
@@ -154,3 +156,4 @@ p{
     width: 3vw;
     margin-right: 5vw;
 }
+
