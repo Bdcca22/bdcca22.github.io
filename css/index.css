@@ -4,6 +4,11 @@
     font-family: "Allura-Regular";
     src: url('../fuentes/Allura-Regular.ttf');
 }
+html{
+    height: 100%;
+    align-content: center;
+}
+
 #div_general{
     
     display:flex;
@@ -31,6 +36,8 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-attachment: fixed;
     background-blend-mode:color-burn;
+
+
     }
 
 #nombre{
@@ -54,9 +61,9 @@ body {
 #botones_principales {
     display: flex;
     flex-direction: column; /* Para que los botones estén en columna */
-    align-items: left; /* Centra los botones horizontalmente */
+
     text-align: center;
-    width: 50%;
+    width: 55%;
 
     margin-left: 10vw;
     margin-right: 10vw;
@@ -106,7 +113,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 780px) {
     #div_derecha{
         display:none;
     }
@@ -140,10 +147,20 @@ body {
     border-radius: 5px;
 }
 
+a{
+    text-decoration: none;
+}
+
 #icon-cv {
     width: 5vw;
     height: auto;
 }
+#cv-container:hover {
+    transform: scale(1.2);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    transition-duration: 0.4s;
+}
+
 
 #descargar_curriculum{
     text-decoration: none;

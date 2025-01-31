@@ -1,3 +1,4 @@
+
 /* --------------CABECERA------------------*/
 #cabecera{
     background: url('../img/cabecera.jpg') no-repeat top center;
@@ -38,6 +39,18 @@ nav {
     
 }
 
+#menu a:hover {
+    text-decoration: none;
+    color: rgb(228, 243, 255);
+    transition-duration: .4s;
+}
+
+#menu img:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    transition-duration: .4s;
+}
+
 #estamosaqui{
     text-decoration: none;
     color: black;
@@ -56,10 +69,13 @@ li{
 
 }
 /* ------------- ESTUDIO -------------------*/
+html{
+    height: 100%;
+}
 h1{
     text-align: center;
     margin-top: 16vh;  
-    font-size: 5vh;
+    font-size: 300%;
     font-family:'Georgia'; /*'Times New Roman', Times, serif*/
 }
 
@@ -134,26 +150,32 @@ p{
 
 
 /* --------------- PIE -----------------*/
-#pie{
+footer{
     background: url('../img/cabecera.jpg') no-repeat bottom center;
     background-size: cover;
-    height: 7%;
+    
+    width: 100%;
+    text-align: center;
+}
+
+#pie{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    position:relative;
-   
-    bottom:0;
-    left:0;
-    right:0;
+    align-items: center;
+    padding: 0 30px;
 }
 
 #pie p{
-    margin-left: 5vw;
+    font-size: 16px;
 }
 
 #pie_linkdin{
-    width: 3vw;
-    margin-right: 5vw;
+    width: 30px;
+    transition: transform 0.3s;
 }
 
+#pie_linkdin:hover{
+    
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
